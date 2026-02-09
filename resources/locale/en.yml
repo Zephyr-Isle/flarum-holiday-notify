@@ -1,0 +1,19 @@
+zephyrisle-holiday-notify:
+  admin:
+    settings:
+      openai_section: OpenAI Settings
+      openai_help: Configure OpenAI API to generate holiday greetings automatically.
+      openai_url: API URL
+      openai_api_key: API Key
+      openai_model: Model (e.g. gpt-3.5-turbo)
+    holidays:
+      title: Holiday Management
+      create: Add Holiday
+      edit: Edit Holiday
+      delete_confirm: Are you sure you want to delete this holiday?
+      name: Holiday Name
+      date: Date
+      type: Type
+      enabled: Enabled
+      actions: Actions
+      template: Custom Template (Optional)

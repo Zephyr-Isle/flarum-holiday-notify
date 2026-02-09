@@ -1,0 +1,38 @@
+{
+    "name": "zephyrisle/flarum-holiday-notify",
+    "description": "Holiday notifications and gray mode for Flarum",
+    "type": "flarum-extension",
+    "keywords": ["flarum", "holiday", "notification", "gray-mode"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ZephyrIsle Assistant",
+            "email": "zephyr_isle@outlook.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "overtrue/chinese-calendar": "^1.0",
+        "psr/container": "1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZephyrIsle\\FlarumHolidayNotify\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Holiday Notify & Gray Mode",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-calendar-alt",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}

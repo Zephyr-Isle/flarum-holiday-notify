@@ -1,0 +1,19 @@
+zephyrisle-holiday-notify:
+  admin:
+    settings:
+      openai_section: OpenAI 设置
+      openai_help: 配置 OpenAI API 以自动生成节日祝福。
+      openai_url: API 地址
+      openai_api_key: API 密钥
+      openai_model: 模型 (如 gpt-3.5-turbo)
+    holidays:
+      title: 节日管理
+      create: 添加节日
+      edit: 编辑节日
+      delete_confirm: 确定要删除这个节日吗？
+      name: 节日名称
+      date: 日期
+      type: 类型
+      enabled: 启用
+      actions: 操作
+      template: 自定义模板 (可选)
