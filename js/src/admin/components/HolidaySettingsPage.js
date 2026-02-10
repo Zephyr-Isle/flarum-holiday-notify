@@ -105,7 +105,7 @@ export default class HolidaySettingsPage extends ExtensionPage {
   }
 
   deleteHoliday(holiday) {
-    if (confirm(app.translator.trans('trae-holiday-notify.admin.holidays.delete_confirm'))) {
+    if (confirm(app.translator.trans('zephyrisle-holiday-notify.admin.holidays.delete_confirm'))) {
       holiday.delete().then(() => this.refresh());
     }
   }

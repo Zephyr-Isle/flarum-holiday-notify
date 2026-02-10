@@ -12,27 +12,11 @@ A Flarum extension that provides holiday notifications using AI-generated conten
 
 ## Installation
 
-1.  Unzip the package into `packages/trae-flarum-holiday-notify` (or your preferred path).
-2.  Add the repository to your Flarum `composer.json`:
+Install with composer:
 
-    ```json
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/trae-flarum-holiday-notify"
-        }
-    ]
-    ```
-
-3.  Install the package:
-
-    ```bash
-    composer require trae/flarum-holiday-notify
-    ```
-
-    *Note: This will automatically install `overtrue/chinese-calendar`.*
-
-4.  Enable the extension in the Admin Panel.
+```bash
+composer require zephyrisle/flarum-holiday-notify
+```
 
 ## Configuration
 

@@ -5,6 +5,7 @@ use ZephyrIsle\FlarumHolidayNotify\Api\Controller;
 use ZephyrIsle\FlarumHolidayNotify\Console\CheckHolidaysCommand;
 use ZephyrIsle\FlarumHolidayNotify\Notification\HolidayNotificationBlueprint;
 use ZephyrIsle\FlarumHolidayNotify\Service\HolidayService;
+use ZephyrIsle\FlarumHolidayNotify\Api\Serializer\HolidayConfigSerializer;
 use Flarum\Frontend\Document;
 
 return [

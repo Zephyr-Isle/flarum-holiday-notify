@@ -1,9 +1,9 @@
 <?php
 
-namespace Trae\FlarumHolidayNotify\Tests\Unit;
+namespace ZephyrIsle\FlarumHolidayNotify\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Trae\FlarumHolidayNotify\Service\OpenAIService;
+use ZephyrIsle\FlarumHolidayNotify\Service\OpenAIService;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Psr\Log\LoggerInterface;
 use GuzzleHttp\Client;
