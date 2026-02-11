@@ -1,4 +1,4 @@
-# Flarum Holiday Notify & Gray Mode Plugin
+# ZephyrIsle Holiday Notify & Gray Mode
 
 A Flarum extension that provides holiday notifications using AI-generated content and gray mode for memorial days.
 
@@ -10,6 +10,11 @@ A Flarum extension that provides holiday notifications using AI-generated conten
 - **Admin Panel**: Fully configurable holidays, independent switches, and OpenAI settings.
 - **Customizable**: Add custom holidays, support for custom templates.
 
+## Requirements
+
+- Flarum ^1.8
+- A running queue worker (recommended) for mass notifications
+
 ## Installation
 
 Install with composer:
@@ -18,9 +23,14 @@ Install with composer:
 composer require zephyrisle/flarum-holiday-notify
 ```
 
+```bash
+php flarum migrate
+php flarum cache:clear
+```
+
 ## Configuration
 
-1.  Go to **Admin > Holiday Notify**.
+1.  Go to **Admin > Extensions > Holiday Notify & Gray Mode**.
 2.  Configure OpenAI API Key and URL (optional, required for AI generation).
 3.  Enable/Disable specific holidays.
 4.  Add custom holidays if needed.

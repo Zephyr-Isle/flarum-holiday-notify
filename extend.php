@@ -52,5 +52,5 @@ return [
         }),
 
     (new Extend\Notification())
-        ->type(HolidayNotificationBlueprint::class, ['alert']),
+        ->type(HolidayNotificationBlueprint::class, HolidayConfigSerializer::class, ['alert']),
 ];

@@ -3,33 +3,34 @@
 namespace ZephyrIsle\FlarumHolidayNotify\Notification;
 
 use Flarum\Notification\Blueprint\BlueprintInterface;
+use ZephyrIsle\FlarumHolidayNotify\HolidayConfig;
 
 class HolidayNotificationBlueprint implements BlueprintInterface
 {
     public $message;
-    public $holidayName;
+    public $holiday;
 
-    public function __construct($holidayName, $message)
+    public function __construct(HolidayConfig $holiday, $message)
     {
-        $this->holidayName = $holidayName;
+        $this->holiday = $holiday;
         $this->message = $message;
     }
 
     public function getSubject()
     {
-        return null;
+        return $this->holiday;
     }
 
-    public function getSender()
+    public function getFromUser()
     {
-        return null; // System notification
+        return null;
     }
 
     public function getData()
     {
         return [
             'message' => $this->message,
-            'holidayName' => $this->holidayName
+            'holidayName' => $this->holiday->name
         ];
     }
 
@@ -40,6 +41,6 @@ class HolidayNotificationBlueprint implements BlueprintInterface
 
     public static function getSubjectModel()
     {
-        return null;
+        return HolidayConfig::class;
     }
 }

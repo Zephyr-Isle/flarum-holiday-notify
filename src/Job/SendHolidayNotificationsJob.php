@@ -40,7 +40,7 @@ class SendHolidayNotificationsJob extends AbstractJob
         // For Flarum, NotificationSyncer handles 'sync' which usually sends to specific users.
         // We can use User::chunk to iterate.
         
-        $blueprint = new HolidayNotificationBlueprint($holiday->name, $content);
+        $blueprint = new HolidayNotificationBlueprint($holiday, $content);
 
         User::chunk(100, function ($users) use ($notifications, $blueprint) {
             $notifications->sync($blueprint, $users->all());
